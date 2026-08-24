@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Blossom | 地元商店街の隠れ家カフェ</title>
+  <meta name="description" content="地元商店街にある20〜30代女性のための温もりあふれる隠れ家カフェ「Cafe Blossom（カフェ ブロッサム）」。こだわりの自家焙煎コーヒーと季節の手作りスイーツで、花束のような優しい時間をお届けします。">
+
+  <!-- Google Fonts（日本語丸ゴシック & 欧文エレガントフォント） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome（アイコン表示用） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- スタイルシート -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================================================
+       ヘッダー（ナビゲーション & ロゴ）
+       =================================================== -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <!-- ロゴエリア -->
+      <a href="#hero" class="logo">
+        <span class="logo-icon">🌸</span>
+        <div class="logo-text">
+          <span class="logo-en">Cafe Blossom</span>
+          <span class="logo-ja">カフェ ブロッサム</span>
+        </div>
+      </a>
+
+      <!-- PC用ナビゲーションメニュー（右寄せ配置） -->
+      <nav class="nav-desktop" aria-label="メインメニュー">
+        <ul class="nav-list">
+          <li><a href="#concept" class="nav-link">こだわり<span>Concept</span></a></li>
+          <li><a href="#menu" class="nav-link">メニュー<span>Menu</span></a></li>
+          <li><a href="#info" class="nav-link">店舗情報<span>Shop Info</span></a></li>
+          <li><a href="#access" class="nav-link">アクセス<span>Access</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- スマホ用ハンバーガーメニューボタン -->
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- モバイル用ナビゲーションドロワー -->
+    <nav class="nav-mobile" id="nav-mobile" aria-label="モバイルメニュー">
+      <ul class="nav-mobile-list">
+        <li><a href="#concept" class="mobile-link">こだわり<span>Concept</span></a></li>
+        <li><a href="#menu" class="mobile-link">おすすめメニュー<span>Menu</span></a></li>
+        <li><a href="#info" class="mobile-link">店舗情報<span>Shop Info</span></a></li>
+        <li><a href="#access" class="mobile-link">アクセス・地図<span>Access</span></a></li>
+      </ul>
+      <div class="mobile-sns">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://line.me" target="_blank" rel="noopener noreferrer" aria-label="LINE"><i class="fa-brands fa-line"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================================================
+         ヒーローセクション（背景一面メインビジュアル & キャッチコピー）
+         =================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- ヒーロー背景オーバーレイ（文字の可読性を保つための優しい光のフィルター） -->
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-container">
+        <!-- ヒーローテキストカード -->
+        <div class="hero-content fade-in-up">
+          <div class="hero-badge">
+            <span>Local Shotengai Cafe</span>
+          </div>
+          <h1 class="hero-title">
+            日々の暮らしに、<br>
+            <span class="highlight">小さな花束</span>のような<br>
+            ひとときを。
+          </h1>
+          <p class="hero-subtitle">
+            こだわりの自家焙煎コーヒーと、<br>
+            季節の素材で焼き上げる手作りスイーツ。<br>
+            商店街の陽だまりで、心ほぐれるカフェタイムをどうぞ。
+          </p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">おすすめメニューを見る <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         コンセプトセクション（こだわり紹介）
+         =================================================== -->
+    <section class="section concept-section" id="concept">
+      <div class="container">
+        <div class="concept-wrapper">
+          <!-- コンセプト画像 -->
+          <div class="concept-image-box fade-in-up">
+            <div class="image-frame">
+              <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="丁寧に淹れられたドリップコーヒーと草花" loading="lazy">
+              <div class="image-accent-circle"></div>
+            </div>
+          </div>
+
+          <!-- コンセプト文章 -->
+          <div class="concept-content fade-in-up delay-1">
+            <div class="section-tag">Concept</div>
+            <h2 class="section-title">
+              忙しい毎日に、<br>
+              そっと寄り添う優しい場所。
+            </h2>
+            <div class="concept-text">
+              <p>
+                Cafe Blossom（カフェ ブロッサム）は、地元商店街の街角にある小さなカフェです。
+              </p>
+              <p>
+                一杯ずつ丁寧にお淹れするスペシャルティコーヒーと、旬のフルーツを贅沢に使った手作りスイーツをご用意しています。
+              </p>
+              <p>
+                お気に入りの本を片手に、自分へのご褒美に。花が咲くようなあたたかな笑顔に出会える時間をお過ごしください。
+              </p>
+            </div>
+
+            <!-- こだわりの3つのポイント -->
+            <div class="concept-features">
+              <div class="feature-item">
+                <div class="feature-icon">☕</div>
+                <div class="feature-info">
+                  <h4>自家焙煎珈琲</h4>
+                  <p>豆の個性を引き出す丁寧なドリップ</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">🍰</div>
+                <div class="feature-info">
+                  <h4>季節のスイーツ</h4>
+                  <p>毎朝お店のオーブンで焼き上げるこだわり</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">🌿</div>
+                <div class="feature-info">
+                  <h4>落ち着く空間</h4>
+                  <p>木漏れ日と緑に囲まれたナチュラルな店内</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         おすすめメニューセクション（4品紹介）
+         =================================================== -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-header text-center fade-in-up">
+          <div class="section-tag">Recommended Menu</div>
+          <h2 class="section-title">季節を彩るおすすめメニュー</h2>
+          <p class="section-subtitle">素材本来の美味しさを大切に、心を込めてお作りしています。</p>
+        </div>
+
+        <div class="menu-grid">
+          <!-- メニュー1: ストロベリーラテ -->
+          <article class="menu-card fade-in-up">
+            <div class="menu-image-container">
+              <img src="https://images.unsplash.com/photo-1534432182912-63863115e106?auto=format&fit=crop&w=800&q=80" alt="ストロベリーラテ" class="menu-image" loading="lazy">
+              <span class="menu-badge">Seasonal</span>
+            </div>
+            <div class="menu-details">
+              <div class="menu-title-row">
+                <h3 class="menu-name">ストロベリーラテ</h3>
+                <span class="menu-price">¥650 <small>(税込)</small></span>
+              </div>
+              <p class="menu-en">Strawberry Latte</p>
+              <p class="menu-description">
+                自家製いちごコンフィチュールと、きめ細やかなスチームミルクが溶け合う優しい甘さの特製ラテ。ほんのりピンク色が心躍る一杯です。
+              </p>
+            </div>
+          </article>
+
+          <!-- メニュー2: 季節のタルト -->
+          <article class="menu-card fade-in-up delay-1">
+            <div class="menu-image-container">
+              <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=800&q=80" alt="季節のタルト" class="menu-image" loading="lazy">
+              <span class="menu-badge">Popular</span>
+            </div>
+            <div class="menu-details">
+              <div class="menu-title-row">
+                <h3 class="menu-name">季節のタルト</h3>
+                <span class="menu-price">¥580 <small>(税込)</small></span>
+              </div>
+              <p class="menu-en">Seasonal Fruit Tart</p>
+              <p class="menu-description">
+                サクサクに焼き上げた香ばしいアーモンド生地に、濃厚カスタードと旬のフレッシュフルーツを贅沢に盛り付けました。
+              </p>
+            </div>
+          </article>
+
+          <!-- メニュー3: ブロッサムブレンド -->
+          <article class="menu-card fade-in-up delay-2">
+            <div class="menu-image-container">
+              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="ブロッサムブレンド" class="menu-image" loading="lazy">
+              <span class="menu-badge">Signature</span>
+            </div>
+            <div class="menu-details">
+              <div class="menu-title-row">
+                <h3 class="menu-name">ブロッサムブレンド</h3>
+                <span class="menu-price">¥500 <small>(税込)</small></span>
+              </div>
+              <p class="menu-en">Blossom Signature Blend</p>
+              <p class="menu-description">
+                花のような華やかなアロマと、柔らかな甘み・すっきりとした後味が特徴の看板ブレンド。スイーツとの相性も抜群です。
+              </p>
+            </div>
+          </article>
+
+          <!-- メニュー4: 抹茶カヌレ -->
+          <article class="menu-card fade-in-up delay-3">
+            <div class="menu-image-container">
+              <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=800&q=80" alt="抹茶カヌレ" class="menu-image" loading="lazy">
+              <span class="menu-badge">Handmade</span>
+            </div>
+            <div class="menu-details">
+              <div class="menu-title-row">
+                <h3 class="menu-name">抹茶カヌレ</h3>
+                <span class="menu-price">¥420 <small>(税込)</small></span>
+              </div>
+              <p class="menu-en">Kyoto Matcha Canelé</p>
+              <p class="menu-description">
+                京都産宇治抹茶を贅沢に練り込みました。外側はカリッと香ばしく、中はしっとりもっちり濃厚な抹茶の風味が広がります。
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-footer-note text-center fade-in-up">
+          <p>※ 全てのドリンク・スイーツはテイクアウトも可能です。お気軽にお申し付けください。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         店舗情報 & アクセスセクション
+         =================================================== -->
+    <section class="section info-section" id="info">
+      <div class="container">
+        <div class="section-header text-center fade-in-up">
+          <div class="section-tag">Shop Info & Access</div>
+          <h2 class="section-title">店舗情報・アクセス</h2>
+          <p class="section-subtitle">商店街の通り沿い、木製の看板が目印です。</p>
+        </div>
+
+        <div class="info-layout">
+          <!-- 店舗情報カード -->
+          <div class="info-card fade-in-up" id="shop-info">
+            <div class="card-inner">
+              <div class="shop-brand">
+                <span class="shop-icon">🌸</span>
+                <h3>Cafe Blossom</h3>
+                <p class="shop-sub">カフェ ブロッサム</p>
+              </div>
+
+              <dl class="info-list">
+                <div class="info-row">
+                  <dt><i class="fa-solid fa-location-dot"></i> 住所</dt>
+                  <dd>
+                    〒150-0001 東京都渋谷区神宮前4丁目12-8<br>
+                    <span>（さくら商店街 中央通り沿い）</span>
+                  </dd>
+                </div>
+                <div class="info-row">
+                  <dt><i class="fa-regular fa-clock"></i> 営業時間</dt>
+                  <dd>10:00 〜 19:00 <small>(L.O. 18:30)</small></dd>
+                </div>
+                <div class="info-row">
+                  <dt><i class="fa-regular fa-calendar-xmark"></i> 定休日</dt>
+                  <dd><span class="badge-holiday">毎週水曜日</span></dd>
+                </div>
+                <div class="info-row">
+                  <dt><i class="fa-solid fa-phone"></i> 電話番号</dt>
+                  <dd><a href="tel:03-1234-5678" class="phone-link">03-1234-5678</a></dd>
+                </div>
+                <div class="info-row">
+                  <dt><i class="fa-solid fa-chair"></i> 席数・設備</dt>
+                  <dd>全18席（テーブル12席 / カウンター6席）<br>全席禁煙 / 無料Wi-Fi・電源完備</dd>
+                </div>
+                <div class="info-row">
+                  <dt><i class="fa-solid fa-credit-card"></i> お支払い</dt>
+                  <dd>現金 / クレジットカード / 各種電子マネー / PayPay</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <!-- アクセス & Googleマップ埋め込みエリア -->
+          <div class="map-card fade-in-up delay-1" id="access">
+            <div class="map-header">
+              <h4><i class="fa-solid fa-route"></i> 最寄駅からのアクセス</h4>
+              <p>各線「表参道駅」A2出口より徒歩3分 / 「明治神宮前駅」より徒歩7分</p>
+            </div>
+            <!-- Google Maps 埋め込みフレーム -->
+            <div class="map-embed-wrapper">
+              <iframe
+                title="Cafe Blossom アクセスマップ"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.392683935277!2d139.70778647628286!3d35.66733563073797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca298f24419%3A0xb36ef19ec311cf57!2z6KGo5Y-C6YGT6aeF!5e0!3m2!1sja!2sjp!4v1708700000000!5m2!1sja!2sjp"
+                width="100%"
+                height="320"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <div class="map-footer">
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-cream">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Googleマップアプリで開く
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         Instagram / ギャラリー誘引バナー
+         =================================================== -->
+    <section class="insta-banner-section">
+      <div class="container">
+        <div class="insta-card fade-in-up">
+          <div class="insta-text">
+            <span class="insta-tag"><i class="fa-brands fa-instagram"></i> Follow us on Instagram</span>
+            <h3>日々の新作スイーツや季節の様子を<br class="sp-br"><span>発信中</span></h3>
+            <p>ハッシュタグ <strong>#cafeblossom</strong> で投稿していただけたら嬉しいです</p>
+          </div>
+          <div class="insta-btn-wrap">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-insta">
+              <i class="fa-brands fa-instagram"></i> @cafe_blossom_official
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================
+       フッター
+       =================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="footer-icon">🌸</span>
+          <span class="footer-title">Cafe Blossom</span>
+        </div>
+        <p class="footer-tagline">日々の暮らしに、小さな花束のようなひとときを。</p>
+        <p class="footer-hours">営業時間: 10:00〜19:00 (水曜定休)</p>
+      </div>
+
+      <div class="footer-nav-block">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">トップ</a></li>
+          <li><a href="#concept">こだわり</a></li>
+          <li><a href="#menu">おすすめメニュー</a></li>
+          <li><a href="#info">店舗情報</a></li>
+          <li><a href="#access">アクセス</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-sns-block">
+        <h4>Official SNS</h4>
+        <div class="footer-sns-icons">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="sns-btn">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="sns-btn">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://line.me" target="_blank" rel="noopener noreferrer" aria-label="LINE" class="sns-btn">
+            <i class="fa-brands fa-line"></i>
+          </a>
+        </div>
+        <p class="footer-sns-text">最新情報や限定クーポンを配信中</p>
+      </div>
+    </div>
+
+    <!-- 著作権表示（コピーライト） -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">&copy; 2026 Cafe Blossom. All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <!-- ページトップへ戻るボタン -->
+    <button class="back-to-top" id="back-to-top" aria-label="ページトップへ戻る">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </footer>
+
+  <!-- スクリプト -->
+  <script src="script.js"></script>
+</body>
+</html>
